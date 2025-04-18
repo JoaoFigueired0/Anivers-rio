@@ -1,0 +1,206 @@
+:root {
+    --bg-body: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+    --text-body: #333;
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-heading: #2c3e50;
+    --font-size-heading-desktop: 3em;
+    --margin-bottom-heading-desktop: 20px;
+    --font-size-paragraph-desktop: 1.2em;
+    --margin-vertical-paragraph-desktop: 10px;
+    --max-width-paragraph-desktop: 730px;
+    --line-height-paragraph-desktop: 1.6;
+    --font-size-emoji-desktop: 1.3em;
+    --margin-top-signature-desktop: 30px;
+    --color-text-signature-desktop: #555;
+    --font-size-signature-desktop: 1em;
+    --margin-top-qrcode-desktop: 40px;
+    --width-image-qrcode-desktop: 200px;
+    --margin-top-link-desktop: 20px;
+    --font-size-link-desktop: 1em;
+    --color-link: #0077cc;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    background: var(--bg-body);
+    color: var(--text-body);
+    margin: 0 auto;
+    padding: 20px 40px;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  h1 {
+    color: var(--color-heading);
+    font-size: var(--font-size-heading-desktop);
+    margin-bottom: var(--margin-bottom-heading-desktop);
+  }
+  
+  p {
+    font-size: var(--font-size-paragraph-desktop);
+    margin: var(--margin-vertical-paragraph-desktop) auto 20px;
+    max-width: var(--max-width-paragraph-desktop);
+    line-height: var(--line-height-paragraph-desktop);
+  }
+  
+  .emoji {
+    font-size: var(--font-size-emoji-desktop);
+  }
+  
+  .assinatura {
+    margin-top: var(--margin-top-signature-desktop);
+    font-style: italic;
+    color: var(--color-text-signature-desktop);
+    font-size: var(--font-size-signature-desktop);
+  }
+  
+  .qr-code {
+    margin-top: var(--margin-top-qrcode-desktop);
+    margin-bottom: 25px;
+  }
+  
+  .qr-code img {
+    width: var(--width-image-qrcode-desktop);
+    height: auto;
+  }
+  
+  .link {
+    margin-top: var(--margin-top-link-desktop);
+    font-size: var(--font-size-link-desktop);
+  }
+  
+  a {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 0.9em;
+      line-height: 1.4;
+      max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 15px;
+    }
+  
+    .emoji {
+      font-size: 1em;
+    }
+  
+    .assinatura {
+      margin-top: 15px;
+      font-size: 0.8em;
+    }
+  
+    .qr-code {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .qr-code img {
+      width: 120px;
+    }
+  
+    .link {
+      margin-top: 10px;
+      font-size: 0.8em;
+    }
+  }
+  
+  @media (min-width: 401px) and (max-width: 600px) {
+    body {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    h1 {
+      font-size: 2.3em;
+      margin-bottom: 12px;
+    }
+  
+    p {
+      font-size: 1em;
+      line-height: 1.5;
+      max-width: 95%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 18px;
+    }
+  
+    .emoji {
+      font-size: 1.1em;
+    }
+  
+    .assinatura {
+      margin-top: 20px;
+      font-size: 0.85em;
+    }
+  
+    .qr-code {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  
+    .qr-code img {
+      width: 140px;
+    }
+  
+    .link {
+      margin-top: 12px;
+      font-size: 0.85em;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    body {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 1.1em;
+      max-width: 85%;
+      line-height: 1.5;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 22px;
+    }
+  
+    .emoji {
+      font-size: 1.2em;
+    }
+  
+    .assinatura {
+      margin-top: 25px;
+      font-size: 0.9em;
+    }
+  
+    .qr-code {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .qr-code img {
+      width: 160px;
+    }
+  
+    .link {
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+  }
